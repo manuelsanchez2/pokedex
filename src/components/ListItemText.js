@@ -1,10 +1,11 @@
 import React from "react";
+import "./ListItemText.css"
 
-function ListItemText(props) {
+function ListItemText({primary, secondary}) {
     return (
-        <div>
-            <h3>{props.primary}</h3>
-            <p>{props.secondary}</p>
+        <div className="listItemText">
+            <h3>{primary}</h3>
+            <p>{secondary}</p>
         </div>   
     )
 }

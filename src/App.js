@@ -2,10 +2,10 @@ import React from 'react';
 import './App.css';
 import List from './components/List';
 import ListItem from './components/ListItem'
-// import ListItemIcon from './components/ListItemIcon';
-// import ListItemText from './components/ListItemText';
-// import BulbasaurSrc from './assets/Bulbasaur.png'
-
+import ListItemIcon from './components/ListItemIcon';
+import ListItemText from './components/ListItemText';
+import BulbasaurSrc from './assets/Bulbasaur.png'
+import PikachuSrc from './assets/Pikachu.png'
 
 function App() {
   return (
@@ -16,18 +16,17 @@ function App() {
     
       <main className="colorful-border">
         <List>
+          <ListItem href= "">
+
+            <ListItemIcon src= {BulbasaurSrc} alt="Bulbasaur"/>
+            <ListItemText primary="Bulbasaur" secondary="#001"/>
+      
+          </ListItem>
           <ListItem href= "ff">
 
-            {/* <ListItemIcon className="pokemon__listIcon" src= "" alt="Bulbasaur"/>
-            <ListItemText primary="Bulbasaur" secondary="#001"/> */}
-            <div>Icono</div>
-            <div style={
-              {
-                flexGrow: 1,
-              }
-
-            }>Text</div>
-            <div>Icono</div>
+            <ListItemIcon src= {PikachuSrc} alt="Pikachu"/>
+            <ListItemText primary="Pikachu" secondary="#025"/>
+      
           </ListItem>
         </List>
       </main>

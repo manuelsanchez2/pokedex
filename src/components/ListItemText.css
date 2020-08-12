@@ -1,0 +1,14 @@
+.listItemText {
+    flex-grow: 2;
+    
+}
+
+.listItemText > :first-child {
+    /* color: var(--bg-gradient); */
+    color: orange;
+}
+
+.listItemText > :last-child {
+    color: grey;
+    font-weight: bolder;
+}

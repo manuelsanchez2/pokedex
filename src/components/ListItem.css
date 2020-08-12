@@ -1,5 +1,6 @@
 .listItem {
     display: flex;
-    border-bottom: 1px solid #f4f4f4;
-    padding: 10px
+    border-bottom: 3px solid #e4e4e4;
+    padding: 10px;
+    text-decoration: none;
 }
