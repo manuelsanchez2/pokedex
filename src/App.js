@@ -6,12 +6,14 @@ import ListItemIcon from './components/ListItemIcon';
 import ListItemText from './components/ListItemText';
 import BulbasaurSrc from './assets/Bulbasaur.png'
 import PikachuSrc from './assets/Pikachu.png'
+import SnorlaxSrc from './assets/Snorlax.png'
+import ShoeSrc from './assets/Shoe.png'
 
 function App() {
   return (
     <div className="app">
       <header>
-        Pokedex <input placeholder="Searchi"/>
+        POKEDEX <input placeholder="Searchi"/>
       </header>
     
       <main className="colorful-border">
@@ -26,6 +28,20 @@ function App() {
 
             <ListItemIcon src= {PikachuSrc} alt="Pikachu"/>
             <ListItemText primary="Pikachu" secondary="#025"/>
+      
+          </ListItem>
+
+          <ListItem href= "ff">
+
+            <ListItemIcon src= {SnorlaxSrc} alt="Snorlax"/>
+            <ListItemText primary="Snorlax" secondary="#143"/>
+      
+          </ListItem>
+
+          <ListItem href= "ff">
+
+            <ListItemIcon src= {ShoeSrc} alt="Shoe"/>
+            <ListItemText primary="Shoe" secondary="#???"/>
       
           </ListItem>
         </List>

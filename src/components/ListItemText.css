@@ -4,11 +4,20 @@
 }
 
 .listItemText > :first-child {
-    /* color: var(--bg-gradient); */
-    color: orange;
+    background: -webkit-linear-gradient( 
+     rgba(124, 166, 252, 1) 25%,
+    rgba(119, 235, 129, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.5rem;
+    display: block;
+    margin-bottom: 22px;
+    font-weight: bold;
 }
 
 .listItemText > :last-child {
     color: grey;
     font-weight: bolder;
+    font-size: 0.8rem;
+    display: block;
 }

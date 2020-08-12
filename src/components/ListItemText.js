@@ -4,8 +4,8 @@ import "./ListItemText.css"
 function ListItemText({primary, secondary}) {
     return (
         <div className="listItemText">
-            <h3>{primary}</h3>
-            <p>{secondary}</p>
+            <span>{primary}</span>
+            <span>{secondary}</span>
         </div>   
     )
 }
