@@ -1,15 +1,18 @@
 import React from 'react';
 import './App.css';
-// import List from './components/List';
+import List from './components/List';
 
 function App() {
   return (
     <div className="app">
       <header>
-        Pokedex <input />
+        Pokedex <input placeholder="Searchi"/>
       </header>
     
-      <main className="colorful-border">Pokemons
+      <main className="colorful-border">
+        <List>
+          Hola
+        </List>
       </main>
       <footer>Footer</footer>
     </div>
