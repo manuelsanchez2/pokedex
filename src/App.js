@@ -24,6 +24,12 @@ function App() {
             <ListItemText primary="Bulbasaur" secondary="#001"/>
       
           </ListItem>
+          <ListItem href= "">
+
+            <ListItemIcon src= "https://img.pokemondb.net/artwork/large/ivysaur.jpg" alt="Ivysaur"/>
+            <ListItemText primary="Ivysaur" secondary="#002"/>
+
+          </ListItem>
           <ListItem href= "ff">
 
             <ListItemIcon src= {PikachuSrc} alt="Pikachu"/>

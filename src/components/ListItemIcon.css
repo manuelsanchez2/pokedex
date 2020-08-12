@@ -1,6 +1,6 @@
 .listItemIcon {
-    width: 60px;
-    /* height: 60px; */
-    align-self: center;
-    margin: 0 15px;
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+    /* margin: 0 15px; */
 }
