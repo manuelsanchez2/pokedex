@@ -4,9 +4,9 @@ import List from './components/List';
 import ListItem from './components/ListItem'
 import ListItemIcon from './components/ListItemIcon';
 import ListItemText from './components/ListItemText';
-import BulbasaurSrc from './assets/Bulbasaur.png'
-import PikachuSrc from './assets/Pikachu.png'
-import SnorlaxSrc from './assets/Snorlax.png'
+import BulbasaurSrc from './assets/Bulbasaur.jpg'
+import PikachuSrc from './assets/Pikachu.jpg'
+import SnorlaxSrc from './assets/Snorlax.jpg'
 import ShoeSrc from './assets/Shoe.png'
 
 function App() {
