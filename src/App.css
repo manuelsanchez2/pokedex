@@ -1,0 +1,45 @@
+.app {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: auto 1fr auto;
+}
+
+.app > header {
+  display: grid;
+  font-size: 1.2rem;
+  padding: 10px;
+  place-items: center;
+  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB)
+}
+
+.app > main {
+  background-color: var(--main-bg-color);
+  padding: 10px;
+}
+
+.app > footer {
+  padding: 10px;
+  background: var(--bg-gradient);
+}
+
+.colorful-border {
+  border-style: solid;
+  border-image-slice: 1;
+  border-width: 5px 0;
+  border-image-source: var(--bg-border);
+}
+
+/* input {
+  background-color:rgba(121, 121, 121, 0.267);
+  padding: 10px;
+  border-radius: 50px;
+  margin: 10px;
+  border: none;
+} */
+
+  
+/* footer {
+  background-color:  chocolate;
+  display: flex;
+  flex-direction: column;
+} */
