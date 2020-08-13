@@ -1,25 +1,30 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './App.css';
 import List from './components/List';
 import ListItem from './components/ListItem'
 import ListItemIcon from './components/ListItemIcon';
 import ListItemText from './components/ListItemText';
-import PokeButton from './components/PokeButton';
 import { fetchPokemons } from './api/pokemon';
 
+function waitFor(time){
+  return new Promise((resolve) => setTimeout(resolve, time));
+}
 function App() {
-  const [pokemons, setPokemons] = React.useState(null);
+  const [pokemons, setPokemons] = useState(null);
 
-  const showPokemons = async () => {
-    const newPokemons = await fetchPokemons();
-    setPokemons(newPokemons);
-  }
+  useEffect(() => {
+    async function fetchData () {
+      await waitFor(1000);
+      const newPokemons = await fetchPokemons();
+      setPokemons(newPokemons);
+    }
+    fetchData();
+  }, []);
   
   return (
     <div className="app">
       <header>
-        POKEDEX <input placeholder="Searchi"/>
-        <PokeButton onClick={showPokemons}>LOAD POKEMONS</PokeButton>
+        POKEDEX <input placeholder="Search your Pokemon"/>
       </header>
     
       <main className="colorful-border">
