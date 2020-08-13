@@ -18,8 +18,8 @@ function App() {
   useEffect(() => {
     async function fetchData () {
 
-      await waitFor(1000);
       setIsLoading(true)
+      await waitFor(2000);
       const newPokemons = await fetchPokemons();
       setPokemons(newPokemons);
       setIsLoading(false);
@@ -28,7 +28,7 @@ function App() {
   }, []);
 
  if (isLoading || pokemons === null) {
-   return <LoadingScreen/>
+   return <LoadingScreen />;
  }
 
 
