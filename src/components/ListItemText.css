@@ -9,9 +9,9 @@
     rgba(119, 235, 129, 1) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 1.5rem;
+    font-size: 1rem;
     display: block;
-    margin-bottom: 22px;
+    margin-bottom: 11px;
     font-weight: bold;
 }
 

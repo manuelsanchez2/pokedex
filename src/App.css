@@ -11,12 +11,13 @@
   font-weight: bold;
   padding: 10px;;
   place-items: center;
-  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB)
+  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB);
 }
 
 .app > main {
   background-color: var(--main-bg-color);
   padding: 10px;
+  overflow: auto;
 }
 
 .app > footer {

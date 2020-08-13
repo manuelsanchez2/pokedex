@@ -1,6 +1,6 @@
-.listItemIcon {
-    width: 2rem;
-    height: 2rem;
+.loadingScreen {
+    width: 7rem;
+    height: 7rem;
     object-fit: contain;
     /* margin: 0 15px; */
 }
