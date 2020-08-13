@@ -14,6 +14,7 @@ function waitFor(time){
 function App() {
   const [isLoading, setIsLoading] = useState(false);
   const [pokemons, setPokemons] = useState(null);
+  const [query, setQuery] = useState("");
 
   useEffect(() => {
     async function fetchData () {
@@ -27,19 +28,22 @@ function App() {
     fetchData();
   }, []);
 
+  const filteredPokemons = pokemons?.filter(pokemon => {
+    return pokemon.name.toLowerCase().match(query.toLowerCase());
+  })
+
  if (isLoading || pokemons === null) {
    return <LoadingScreen />;
  }
 
-
   return (
     <div className="app">
       <header>
-        POKEDEX <input placeholder="Search your Pokemon"/>
+        POKEDEX <input value={query} onChange={(event) => setQuery(event.target.value)} placeholder="Search your pokemon"/>
       </header>
       <main className="colorful-border">
         <List>
-          {pokemons?.map((pokemon) => (
+          {filteredPokemons?.map((pokemon) => (
             <ListItem key={pokemon.id} href= {pokemon.link}>
               <ListItemIcon src= {pokemon.imgSrc} alt={`Picture of ${pokemon.name}`}
               />
