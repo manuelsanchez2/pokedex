@@ -1,0 +1,23 @@
+.listItemText {
+    flex-grow: 2;
+    
+}
+
+.listItemText > :first-child {
+    background: -webkit-linear-gradient( 
+     rgba(124, 166, 252, 1) 25%,
+    rgba(119, 235, 129, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 11px;
+    font-weight: bold;
+}
+
+.listItemText > :last-child {
+    color: grey;
+    font-weight: bolder;
+    font-size: 0.8rem;
+    display: block;
+}

@@ -7,14 +7,17 @@
 .app > header {
   display: grid;
   font-size: 1.2rem;
-  padding: 10px;
+  font-family: Lato;
+  font-weight: bold;
+  padding: 10px;;
   place-items: center;
-  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB)
+  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB);
 }
 
 .app > main {
   background-color: var(--main-bg-color);
   padding: 10px;
+  overflow: auto;
 }
 
 .app > footer {
@@ -29,13 +32,16 @@
   border-image-source: var(--bg-border);
 }
 
-/* input {
+input {
   background-color:rgba(121, 121, 121, 0.267);
-  padding: 10px;
-  border-radius: 50px;
-  margin: 10px;
+  padding: 10px 10px;
+  border-radius: 30px;
+  margin: 10px 10px;
   border: none;
-} */
+  width: 80vw;
+}
+  
+
 
   
 /* footer {

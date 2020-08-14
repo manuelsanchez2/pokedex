@@ -1,0 +1,15 @@
+.listItem {
+    display: flex;
+    border-bottom: 3px solid #e4e4e4;
+    padding: 10px;
+    text-decoration: none;
+    align-items: center;
+}
+
+.listItem > :first-child {
+    margin-right: 15px;
+}
+
+.listItem > :last-child {
+    margin: 0;
+}
