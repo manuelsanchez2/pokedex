@@ -18,7 +18,7 @@ function Pokemons(props) {
   useEffect(() => {
     async function fetchData() {
       setIsLoading(true);
-      await waitFor(2000);
+      await waitFor(1000);
       const newPokemons = await fetchPokemons();
       setPokemons(newPokemons);
       setIsLoading(false);
@@ -45,7 +45,10 @@ function Pokemons(props) {
       <main className="colorful-border">
         <List>
           {filteredPokemons?.map((pokemon) => (
-            <ListItem key={pokemon.id} href={pokemon.link}>
+            <ListItem
+              key={pokemon.id}
+              href={`/pokemons/${pokemon.name.toLowerCase()}`}
+            >
               <ListItemIcon
                 src={pokemon.imgSrc}
                 alt={`Picture of ${pokemon.name}`}

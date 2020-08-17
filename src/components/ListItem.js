@@ -1,9 +1,14 @@
 import "./ListItem.css";
 import React from "react";
+import { Link } from "react-router-dom";
 // si no importamos React no podemos hacer un componente
 
 function ListItem({ href, children }) {
-    return <a className="listItem" href = {href}>{children}</a>
+  return (
+    <Link className="listItem" to={href}>
+      {children}
+    </Link>
+  );
 }
 
 export default ListItem;
