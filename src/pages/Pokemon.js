@@ -2,7 +2,8 @@ import React, { useEffect, useState } from "react";
 import { useParams, useHistory } from "react-router-dom";
 import { fetchPokemon } from "../api/pokemon";
 import LoadingScreen from "../components/LoadingScreen";
-// import pokeballSrc from "../assets/pokeball.svg";
+import pokeballSrc from "../assets/pokeball.svg";
+import "./Pokemon.css";
 
 function Pokemon() {
   const { name } = useParams();
@@ -34,10 +35,11 @@ function Pokemon() {
     return <LoadingScreen />;
   }
   return (
-    <div>
-      <button onClick={() => history.goBack()}>BACK</button>
-      {/* <img src={pokeballSrc} alt="pokeball" /> */}
-      <div>Name: {pokemon.name.toUpperCase()}</div>
+    <div className="pokemon">
+      <button className="pokeball__button" onClick={() => history.goBack()}>
+        <img className="pokeball__image" src={pokeballSrc} alt="pokeball" />
+      </button>
+      <div className="pokemon__title">{pokemon.name.toUpperCase()}</div>
       <div>Nr. {pokemon.id}</div>
       <div>
         <img src={pokemon.imgSrc} alt={pokemon.name} />

@@ -47,7 +47,7 @@ function Pokemons(props) {
           {filteredPokemons?.map((pokemon) => (
             <ListItem
               key={pokemon.id}
-              href={`/pokemons/${pokemon.name.toLowerCase()}`}
+              to={`/pokemons/${pokemon.name.toLowerCase()}`}
             >
               <ListItemIcon
                 src={pokemon.imgSrc}
