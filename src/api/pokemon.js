@@ -30,6 +30,9 @@ export async function fetchPokemon(pokemonName) {
     name: result.name,
     id: result.id,
     imgSrc: result.sprites.front_shiny,
+    hp: result.stats[0]?.base_stat,
+    attack: result.stats[1]?.base_stat,
+    defense: result.stats[2]?.base_stat,
   };
   return pokemon;
 }
