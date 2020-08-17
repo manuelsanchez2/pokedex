@@ -5,7 +5,6 @@ import ListItem from "./components/ListItem";
 import ListItemIcon from "./components/ListItemIcon";
 import ListItemText from "./components/ListItemText";
 import { fetchPokemons } from "./api/pokemon";
-// import pokedexSrc from './assets/pokedex.png';
 import LoadingScreen from "./components/LoadingScreen";
 
 function waitFor(time) {
