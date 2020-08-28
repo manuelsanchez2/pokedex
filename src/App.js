@@ -28,7 +28,7 @@ function App() {
             <Items />
           </Route>
           <Route path="/">
-            <Redirect to="pokemons" />
+            <Redirect to="/pokemons" />
           </Route>
         </Switch>
         <footer>
