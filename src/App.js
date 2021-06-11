@@ -1,14 +1,8 @@
 import React from "react";
 import "./App.css";
+import { BrowserRouter as Router, Switch, Route, Redirect } from "react-router-dom";
 
-// Podemos importar funciones y cambiarle el nombre
-import {
-  BrowserRouter as Router,
-  Link,
-  Switch,
-  Route,
-  Redirect,
-} from "react-router-dom";
+// Pages 
 import Pokemons from "./pages/Pokemons";
 import Items from "./pages/Items";
 import Pokemon from "./pages/Pokemon";
@@ -31,11 +25,6 @@ function App() {
             <Redirect to="/pokemons" />
           </Route>
         </Switch>
-        <footer>
-          <Link to="/pokemons">Pokemons</Link>
-          <Link to="/items">Items</Link>
-          <Link to="/home">Home</Link>
-        </footer>
       </div>
     </Router>
   );

@@ -2,6 +2,7 @@
   display: grid;
   height: 100vh;
   grid-template-rows: auto 1fr auto;
+  position: relative;
 }
 
 .app > header {
@@ -17,12 +18,34 @@
 .app > main {
   background-color: var(--main-bg-color);
   padding: 10px;
+  height: 100%;
   overflow: auto;
 }
 
 .app > footer {
   padding: 10px;
   background: var(--bg-gradient);
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+}
+
+.app > footer a {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: #292929;
+  margin: 10px 0;
+  font-size: 12px;
+}
+
+.app > footer a img {
+  width: 35px;
+  margin: 5px 0;
 }
 
 .colorful-border {
@@ -35,7 +58,7 @@
 input {
   background-color:rgba(121, 121, 121, 0.267);
   padding: 10px 10px;
-  border-radius: 30px;
+  border-radius: 5px;
   margin: 10px 10px;
   border: none;
   width: 80vw;

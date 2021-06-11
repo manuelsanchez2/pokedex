@@ -6,6 +6,7 @@ import ListItemIcon from "../components/ListItemIcon";
 import ListItemText from "../components/ListItemText";
 import { fetchPokemons } from "../api/pokemon";
 import LoadingScreen from "../components/LoadingScreen";
+import Footer from "../components/Footer";
 
 function Pokemons(props) {
   const [isLoading, setIsLoading] = useState(false);
@@ -58,6 +59,7 @@ function Pokemons(props) {
           ))}
         </List>
       </main>
+      <Footer />
     </>
   );
 }
