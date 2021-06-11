@@ -1,6 +1,6 @@
 import React from 'react';
 import Footer from './Footer';
-import pokeballSrc from "../assets/pokeball.svg";
+import pokeballSrc from "../assets/pokeball.png";
 import { useHistory } from "react-router-dom";
 import "../pages/Pokemon.css";
 

@@ -3,7 +3,7 @@ import { useParams, useHistory } from "react-router-dom";
 import { fetchPokemon } from "../api/pokemon";
 import LoadingScreen from "../components/LoadingScreen";
 import ErrorScreen from "../components/ErrorScreen";
-import pokeballSrc from "../assets/pokeball.svg";
+import pokeballSrc from "../assets/pokeball.png";
 import "./Pokemon.css";
 import Footer from "../components/Footer";
 
