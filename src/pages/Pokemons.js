@@ -1,12 +1,12 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 
+import { fetchPokemons } from "../api/pokemon";
+import Footer from "../components/Footer";
 import List from "../components/List";
 import ListItem from "../components/ListItem";
 import ListItemIcon from "../components/ListItemIcon";
 import ListItemText from "../components/ListItemText";
-import { fetchPokemons } from "../api/pokemon";
 import LoadingScreen from "../components/LoadingScreen";
-import Footer from "../components/Footer";
 
 function Pokemons(props) {
   const [isLoading, setIsLoading] = useState(false);
@@ -30,9 +30,10 @@ function Pokemons(props) {
   if (isLoading || pokemons === null) {
     return <LoadingScreen />;
   }
-  const filteredPokemons = pokemons?.filter((pokemon) => {
+  const filteredPokemons = pokemons?.slice(0, 151).filter((pokemon) => {
     return pokemon.name.toLowerCase().match(query.toLowerCase());
   });
+
   return (
     <>
       <header>
@@ -45,7 +46,7 @@ function Pokemons(props) {
       </header>
       <main className="colorful-border">
         <List>
-          {filteredPokemons?.map((pokemon) => (
+          {filteredPokemons?.slice(0, 151).map((pokemon) => (
             <ListItem
               key={pokemon.id}
               to={`/pokemons/${pokemon.name.toLowerCase()}`}

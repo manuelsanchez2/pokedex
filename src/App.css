@@ -10,9 +10,9 @@
   font-size: 1.2rem;
   font-family: Lato;
   font-weight: bold;
-  padding: 10px;;
+  padding: 10px;
   place-items: center;
-  background: linear-gradient(to right, #DEECFA, #E1F4E7, #DBF6DB);
+  background: linear-gradient(to right, #deecfa, #e1f4e7, #dbf6db);
 }
 
 .app > main {
@@ -27,9 +27,7 @@
   background: var(--bg-gradient);
   display: flex;
   justify-content: space-around;
-  position: absolute;
   width: 100%;
-  bottom: 0;
 }
 
 .app > footer a {
@@ -56,17 +54,14 @@
 }
 
 input {
-  background-color:rgba(121, 121, 121, 0.267);
+  background-color: rgba(121, 121, 121, 0.267);
   padding: 10px 10px;
   border-radius: 5px;
   margin: 10px 10px;
   border: none;
   width: 80vw;
 }
-  
 
-
-  
 /* footer {
   background-color:  chocolate;
   display: flex;
